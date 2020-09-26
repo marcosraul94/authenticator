@@ -1,0 +1,20 @@
+{
+  "name": "authorize",
+  "version": "1.0.0",
+  "description": "Authorize the clients transcribe requests providing a signed url.",
+  "main": "index.js",
+  "author": "marcos betancourt",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.7.1",
+    "@google-cloud/storage": "^5.3.0",
+    "axios": "^0.20.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "watch": "nodemon yarn start",
+    "start": "functions-framework --target=authorize"
+  }
+}
