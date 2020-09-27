@@ -1,5 +1,7 @@
-const url = 'http://localhost:8080/';
+const localUrl = 'http://localhost:8080/';
+const cloud_url = 'https://us-central1-speech-text-272601.cloudfunctions.net/authorizeFileUpload';
 
 module.exports = {
-    url,
+    localUrl,
+    cloud_url,
 };
