@@ -16,7 +16,7 @@ const authorize = async (req, res) => {
 
     try{
         const signedUrl = await file.getSignedUrl(options);
-        return res.send({'url': signedUrl});
+        return res.send({'url': signedUrl[0] });
     }
     catch (e) {
         res.send({'error': e});
